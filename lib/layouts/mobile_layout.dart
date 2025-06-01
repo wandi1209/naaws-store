@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class MobileLayout extends StatelessWidget {
+  const MobileLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.symmetric(vertical: 5, horizontal: 300),
-              height: 90,
+              padding: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
+              height: 70,
               width: double.infinity,
               color: Color(0xFFEF88AD),
               child: Column(
@@ -22,7 +23,7 @@ class HomePage extends StatelessWidget {
                     "Naaws",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 30,
+                      fontSize: 24,
                       height: 1,
                       color: Colors.white,
                     ),
@@ -31,18 +32,12 @@ class HomePage extends StatelessWidget {
                     "your needs",
                     style: TextStyle(
                       letterSpacing: 5,
-                      fontSize: 12,
+                      fontSize: 10,
                       height: 1,
                       color: Colors.white,
                     ),
                   ),
                 ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 350,
-                vertical: 50,
               ),
             ),
           ],

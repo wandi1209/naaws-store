@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class DesktopLayout extends StatelessWidget {
+  const DesktopLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.symmetric(vertical: 5, horizontal: 300),
+              padding: EdgeInsets.symmetric(
+                vertical: 5,
+                horizontal: screenWidth * 0.18,
+              ),
               height: 90,
               width: double.infinity,
               color: Color(0xFFEF88AD),
@@ -40,8 +44,8 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 350,
+              padding: EdgeInsets.symmetric(
+                horizontal: screenWidth * 0.2,
                 vertical: 50,
               ),
             ),
