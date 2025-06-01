@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:naaws_store/widgets/carosuel_widget.dart';
 
 class MobileLayout extends StatelessWidget {
   const MobileLayout({super.key});
@@ -40,6 +41,7 @@ class MobileLayout extends StatelessWidget {
                 ],
               ),
             ),
+            CarosuelWidget()
           ],
         ),
       ),
