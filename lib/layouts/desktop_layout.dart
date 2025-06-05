@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:naaws_store/widgets/carosuel_widget.dart';
+import 'package:naaws_store/widgets/category_widget.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -49,7 +50,13 @@ class DesktopLayout extends StatelessWidget {
                 horizontal: screenWidth * 0.2,
                 vertical: 50,
               ),
-              child: CarosuelWidget(),
+              child: Column(
+                children: [
+                  CarosuelWidget(),
+                  SizedBox(height: 20),
+                  CategoryWidget(),
+                ],
+              ),
             ),
           ],
         ),
